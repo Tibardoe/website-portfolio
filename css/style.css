@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #626D60;
+    letter-spacing: 3px;
+    font-family: "Istok Web", sans-serif;
+}
+
+/* .header {
+    background-color: black;
+} */
+
+.nav-bar-container {
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #A1A47D;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content h1 {
+    font-family: "Jockey One", sans-serif;
+    font-size: 5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: left;
+    width: 90%;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    border-top: 1px solid black;
+}
+
+.intro {
+    width: 83%;
+    margin: 0 auto;
+}
+
+.intro p {
+    padding: 20px;
+    margin: 50px 0;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.skills h1 {
+    font-family: "Jockey One", sans-serif;
+    font-size: 3rem;
+    width: 90.5%;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.first {
+    background-color: #89A47D;
+}
+
+.second {
+    background-color: #A1A47D;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    width: 81%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.card {
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.card h2 {
+    color: #232E3E;
+    font-family: "Jockey One", sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.tool-list {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.in-touch {
+    width: 90%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.in-touch h1 {
+    font-family: "Jockey One", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.in-touch p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+}
+
+.submit:hover {
+    background-color: white;
+    color: black;
+
+}
+
+input,
+textarea {
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#scroll {
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    z-index: 1000;
+}
+
+#scroll:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.type {
+    display: inline-block;
+}
+
+.typing {
+    border-right: 2px solid black;
+    animation:
+        blinking 1s steps(1, end) infinite,
+        typing 4s steps(40, end);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: black;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: black;
+    }
+}
+
+@media (max-width: 760px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    #menu-icon {
+        background-color: black;
+        height: 50px;
+        width: 60px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    #menu-icon span {
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        width: 70%;
+        height: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+    }
+
+    #menu-icon span:nth-child(2) {
+        top: 25%;
+    }
+
+    #menu-icon span:nth-child(3) {
+        top: 75%;
+    }
+
+    .side-menu {
+        display: flex;
+        background-color: black;
+        border-radius: 10px;
+        top: 0;
+        right: -450px;
+        flex-direction: column;
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        transition: .3s ease;
+    }
+
+    .side-menu li a:hover {
+        color: #A1A47D;
+    }
+
+    .side-menu.show {
+        right: 0;
+    }
+
+    #menu-icon.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    #menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-icon.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .card-container {
+        display: block;
+
+        /* flex-direction: column;
+        justify-content: center; */
+    }
+
+    .card {
+        padding: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+
+    /* .in-touch {
+        width: 90%;
+        padding: 50px;
+        margin: 0 auto;
+    } */
+
+    /* .in-touch h1 {
+        font-family: "Jockey One", sans-serif;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    } */
+
+    /* .in-touch p {
+        font-size: 1.5rem;
+        text-align: justify;
+    } */
+
+    .form {
+        text-align: center;
+    }
+
+    form {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    label {
+        text-align: left;
+    }
+}
